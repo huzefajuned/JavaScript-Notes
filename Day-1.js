@@ -90,7 +90,8 @@
 // }
 // document.getElementById("show").innerHTML = text;
 
-// accessing arrays items using foeEach methods..
+// accessing arrays items using forEach methods..
 // const array1 = ["a", "b", "c"];
 // array1.forEach((element) => console.log(element));
 // document.getElementById("show").innerHTML = array1;
+//done
