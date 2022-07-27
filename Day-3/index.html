@@ -1,0 +1,54 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Document</title>
+    <style>
+      .container {
+        background-color: antiquewhite;
+        text-align: center;
+        padding: 100px;
+        width: 80vw;
+        margin: auto;
+      }
+      button {
+        background-color: aqua;
+        border: none;
+        padding: 10px;
+        margin: 100px;
+      }
+      button:hover {
+        background-color: rgb(10, 45, 45);
+        color: rgb(202, 21, 166);
+        cursor: pointer;
+        border-radius: 10px;
+      }h2{
+          background-color: red;
+      }
+    </style>
+  </head>
+  <body>
+    <div class="container">
+      <h1>Dom Methods</h1>
+      <br />
+      <p>
+        DOM methods are actions that we can perform on objects of DOM. <br />
+
+        ** DOM methods includes selecting an elements , changing the content of
+        the elements, <br />
+        changing the css , removing elements etc...
+      </p>
+      <div id="change">
+        remove this article by clicking the button. use
+        (document.getElemetById()).
+      </div>
+      <button onclick="removeArticle()">Click to Change</button>
+    </div>
+
+    <script src="./script.js">
+
+    </script>
+  </body>
+</html>

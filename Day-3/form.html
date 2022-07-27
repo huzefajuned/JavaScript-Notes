@@ -1,0 +1,105 @@
+<html>
+  <head>
+    <title>SignUp Page</title>
+  </head>
+  <style>
+    body {
+      background-color: rgb(203, 202, 201);
+      margin: 10px;
+      color: rgb(23, 23, 23);
+      font-family: fantasy;
+      text-align: center;
+    }
+    .container {
+      width: 50vw;
+      background-color: blanchedalmond;
+      margin: auto;
+      align-items: center;
+    }
+    table {
+      align-items: center;
+      text-align: center;
+      width: 90%;
+      margin: auto;
+      padding: 20px;
+    }
+    #show {
+      background-color: yellow;
+      padding: 20px;
+      font-family: "Times New Roman", Times, serif;
+      display: none;
+    }
+  </style>
+  <body>
+    <div class="container">
+      <table cellspacing="2">
+        <h1>CREATE YOUR ACCOUNT</h1>
+
+        <tr>
+          <td>Name</td>
+          <td><input type="text" placeholder="Enter your name" id="n1" /></td>
+        </tr>
+        <tr>
+          <td>Email</td>
+          <td>
+            <input type="text" placeholder="Enter your email id" id="e1" />
+          </td>
+        </tr>
+        <tr>
+          <td>Set Password</td>
+          <td>
+            <input type="password" placeholder="Set a password" id="p1" />
+          </td>
+        </tr>
+        <tr>
+          <td>Confirm Password</td>
+          <td>
+            <input
+              type="password"
+              placeholder="Confirm your password"
+              id="p2"
+            />
+          </td>
+        </tr>
+        <tr>
+          <td>
+            <input type="submit" value="Create" onClick="create_account()" />
+          </td>
+        </tr>
+      </table>
+    </div>
+
+    <div id="show"></div>
+
+    <script type="text/javascript">
+      function create_account() {
+        var n = document.getElementById("n1").value;
+        var e = document.getElementById("e1").value;
+        var p = document.getElementById("p1").value;
+        var cp = document.getElementById("p2").value;
+
+        if (!n || !e || !p || !cp) {
+          alert("fill all required fields ");
+          //   return;
+        } else if (p != cp) {
+          alert("password didn't match");
+        } else {
+          const data =
+            "NAME:" +
+            n +
+            "<br/>" +
+            "EMAIL:" + 
+            e +
+            "<br/>" +
+            "PASSWORDS:" +
+            p +
+            "<br/>" +
+            "CONFIRM PASSWORD:" +
+            cp;
+          document.getElementById("show").innerHTML = data;
+          document.getElementById("show").style.display = "block";
+        }
+      }
+    </script>
+  </body>
+</html>
