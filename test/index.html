@@ -1,0 +1,30 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Document</title>
+  </head>
+  <body>
+    <a href="">Home</a>
+    <a href="">About</a>
+    <a href="">Home</a>
+    <a href="">About</a>
+    <a href="">Home</a>
+    <a href="">About</a>
+    <a href="">Home</a>
+    <a href="">About</a>
+  </body>
+
+  <script>
+    var a_tag = document.getElementsByTagName("a");
+
+    for (let i = 0; i < a_tag.length; i++) {
+      console.log(a_tag[i]);
+      if (a_tag[i].innerText == "Home") {
+        a_tag[i].style.color = "red";
+      }
+    }
+  </script>
+</html>
